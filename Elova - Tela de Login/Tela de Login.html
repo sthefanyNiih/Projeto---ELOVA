@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--A caixinha de login onde estão contidos o usuário e a senha:-->
+    <div class="caixa-de-login">
+        <!--Imagem PNG da logo do nosso projeto:-->
+        <img src="logo_elova.jpeg" alt="Logo" style="width: 300px; margin-bottom: 5px;">
+        <!--Formulário de usuário e senha:-->
+        <form id="loginForm">
+            <!--Usuário:-->
+            <label for="usuario">Insira o nome de usuário:</label>
+            <input type="text" id="usuario" name="usuario" placeholder="Usuário" required />
+            <!--Senha:-->
+            <label for="senha">Insira a senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Senha" required />
+            <input type="submit" value="Entrar" />
+        </form>
+        <p id="mensagem-erro" style="color: #ff6b6b; font-weight: bold; margin-top: 10px;"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

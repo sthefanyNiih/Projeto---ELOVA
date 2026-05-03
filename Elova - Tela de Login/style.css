@@ -1,0 +1,85 @@
+body {
+    /*Cor de fundo do site:*/
+    background: linear-gradient(to right, #1e0439, #0d357b);
+    /*Margem:*/
+    margin: 0;
+    /*Altura:*/
+    height: 100vh;
+    /*Tipo de visualização:*/
+    display: flex;
+    /*Coloca o conteúdo no centro:*/
+    justify-content: center;
+    /*Coloca os itens no centro:*/
+    align-items: center;
+}
+
+.caixa-de-login {
+    /*Coloca o texto presente na caixa de login no centro:*/
+    text-align: center;
+    /*Tamanho da caixa de login:*/
+    width: 300px;
+}
+
+label {
+    /*Fonte utilizada na escrita do usuário e senha das caixinhas:*/
+    font-family: sans-serif;
+    /*Tamanho da fonte:*/
+    font-size: 21px;
+    /*Destacamento do texto:*/
+    font-weight: bold;
+    /*Cor desse texto:*/
+    color: black; 
+    /*Espessura da borda*/
+    -webkit-text-stroke-width: 0.2px;
+    /*Cor da borda*/
+    -webkit-text-stroke-color: rgb(232, 163, 255);
+}
+
+input[type="text"], 
+input[type="password"] {
+    /*Cor de fundo das caixinhas:*/
+    background-color: rgb(232, 163, 255);
+    /*Borda da caixinha:*/
+    border: 1px solid rgb(51, 17, 54);
+    /*Tamanho da borda da caixinha:*/
+    border-radius: 10px;
+    /*Espaçamento entre os itens:*/
+    padding: 12px;
+    /*Tamanho das caixinhas:*/
+    width: 250px;
+    /*Cor do texto escrito:*/
+    color: antiquewhite;
+    /*Destacamento do texto:*/
+    font-weight: bold;
+    outline: none;
+    /*Margem inferior:*/
+    margin-bottom: 10px;
+}
+
+input:placeholder {
+    /*Cor do texto das caixinhas:*/
+    color: white;
+}
+
+input[type="submit"] {
+    /*Cor de fundo do botão:*/
+    background-color: #110790;
+    /*Cor do texto presente no botão:*/
+    color: white;
+    /*Sem borda:*/
+    border: none;
+    /*Tamanho da borda:*/
+    border-radius: 10px;
+    /*Espaçamento entre os itens:*/
+    padding: 12px 20px;
+    /*Tamanho da fonte:*/
+    font-size: 16px;
+    /*Destacamento do texto:*/
+    font-weight: bold;
+    /*Alteração do cursor do mouse:*/
+    cursor: pointer;
+    /*Tamanho do botão:*/
+    width: 250px;
+    /*Margem superior:*/
+    margin-top: 10px;
+}
