@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--Cor de fundo do site:-->
+<div class="background">
+    <!--A caixinha de login onde estão contidos o usuário e a senha:-->
+    <div class="caixa-de-login">
+        <!--Imagem JPEG da logo do nosso projeto:-->
+        <img src="logo_elova.jpeg" alt="Logo" class="logo">
+        <!--Título da página-->
+        <h2>Bem-vindo(a) de volta</h2>
+        <!--Subtítulo da página-->
+        <p class="subtitulo">Continue de onde parou</p>
+        <!--Formulário de usuário e senha:-->
+        <form id="loginForm">
+            <div class="inputs">
+            <!--Usuário:-->
+            <label for="usuario">E-MAIL OU USUÁRIO</label>
+            <input type="text" id="usuario" name="usuario" placeholder="seu@email.com" required />
+            </div>
+            <div class="inputs">
+            <!--Senha:-->
+            <label for="senha">SENHA</label>
+            <input type="password" id="senha" name="senha" placeholder="••••••••" required />
+            </div>
+            <button type="submit" class="entrar">ENTRAR</button>
+        </form>
+        <p class="cadastre-se">Não tem conta? <a href="#">Cadastre-se</a></p>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
