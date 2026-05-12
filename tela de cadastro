@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta - Elova</title>
+    <style> 
+        body {
+            margin: 0;
+            height: 100vh;
+            background: radial-gradient(circle at top, #1a0033, #050010);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1); 
+            padding: 40px;
+            border-radius: 20px;
+            width: 300px;
+            backdrop-filter: blur(15px); 
+            -webkit-backdrop-filter: blur(15px); 
+            box-shadow: 0 0 40px rgba(128, 0, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .card-logo {
+            width: 140px;
+            height: auto;
+            margin-bottom: 15px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+        }
+
+        h2 { margin-top: 0; font-weight: bold; }
+        p { color: #aaa; font-size: 14px; margin-bottom: 20px; }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 12px;
+            border: none;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #333; 
+            box-sizing: border-box; 
+            outline: none;
+        }
+
+        button {
+            margin-top: 25px;
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(90deg, #7b2ff7, #3a7bd5);
+            color: white;
+            font-weight: bold; 
+            cursor: pointer;  
+            transition: 0.3s;
+        }
+
+        button:hover {
+            opacity: 0.9;
+            transform: scale(1.03);
+        }
+    </style>
+</head> 
+<body>
+    <div class="card">
+        <!-- ALTERADO PARA .JPEG CONFORME SUA SOLICITAÇÃO -->
+        <img src="logo_elova.jpeg" alt="Logo Elova" class="card-logo">
+    
+        <h2>Criar Conta</h2>
+        <p>Preencha os campos abaixo para criar sua conta.</p>
+        
+        <input type="text" id="nome" placeholder="Nome Completo">
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="senha" placeholder="Senha">
+        <input type="password" id="confirmar" placeholder="Confirmar senha">
+        
+        <button onclick="criarconta()">Criar Conta</button>
+    </div>
+
+    <script> 
+        function criarconta() {
+            let nome = document.getElementById("nome").value;
+            let email = document.getElementById("email").value;
+            let senha = document.getElementById("senha").value;
+            let confirmarSenha = document.getElementById("confirmar").value;
+
+            if (nome === "" || email === "" || senha === "" || confirmarSenha === "") {
+                alert("Por favor, preencha todos os campos.");
+                return;
+            } 
+            
+            if (senha !== confirmarSenha) {
+                alert("As senhas não são iguais!");
+                return;
+            } 
+            
+            alert("Sucesso! Conta Elova criada para: " + nome);
+        }
+    </script>
+</body>
+</html>
